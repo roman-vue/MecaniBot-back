@@ -10,8 +10,8 @@ export class AuthController {
 
     public static async sign_out(req:Request, res:Response, next:NextFunction){
       try {
-        let {deviceId, car_plate}= req.body
-        const data = await authService.sign_up(deviceId, car_plate)
+        let {deviceId, car_plate, type, model, km, last_maintenance}= req.body
+        const data = await authService.sign_up(deviceId, car_plate, type, model, km, last_maintenance)
         res.status(201).json({
             message: "car_plate registrer success",
             data
