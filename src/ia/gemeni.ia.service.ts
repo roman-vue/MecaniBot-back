@@ -2,7 +2,7 @@ import axios from 'axios';
 import { Type } from '../utils/type.enum';
 
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
-const GEMINI_API_KEY = 'AIzaSyAYj7fTv2XloMgbZC83zp7OQjLineUHMv0'
+const GEMINI_API_KEY = 'eltrilococo'
 
 export async function generarMantenimientos(tipo: Type, modelo: string, kilometraje: string, ultimaActualizacion: string) {
     try {
